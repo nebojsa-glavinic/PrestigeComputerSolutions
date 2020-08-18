@@ -1,28 +1,31 @@
-@font-face {
-  font-family: 'Signika', sans-serif;
-  src: url("../fonts/signika/Signika-Regular.ttf") format("truetype");
-}
-
-* {
-  font-family: 'Signika', sans-serif;
-}
-
+/*@font-face{
+    font-family: 'Signika', sans-serif;
+    src: url("../fonts/signika/Signika-Regular.ttf") format("truetype");
+}*/
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 60px;
+}
+
+body {
+  font-family: 'Signika', sans-serif;
   font-size: 0.85rem;
 }
 
 @media (min-width: 576px) {
-  html {
+  body {
     font-size: 0.95rem;
   }
 }
 
 @media (min-width: 768px) {
-  html {
+  body {
     font-size: 1rem;
   }
+}
+
+body h1 {
+  font-weight: 800;
 }
 
 .bgd {
@@ -904,7 +907,6 @@ button:focus {
 header #m-logo h1 {
   font-size: 40px;
   text-transform: capitalize;
-  font-weight: 500;
 }
 
 #m-mainNav {

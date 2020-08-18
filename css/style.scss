@@ -9,14 +9,12 @@ $black:#18181e;
 $tLight: hsla(0, 0%, 100%, 0.5);
 $tDark: rgba(0, 0, 0, 0.3);
 
-@font-face{
+/*@font-face{
     font-family: 'Signika', sans-serif;
     src: url("../fonts/signika/Signika-Regular.ttf") format("truetype");
-}  
+}*/
 
-*{
-    font-family: 'Signika', sans-serif;
-  }
+
 
   //@mixin
   @mixin res($breakPoint) {
@@ -36,6 +34,10 @@ $tDark: rgba(0, 0, 0, 0.3);
 html {
     scroll-behavior: smooth;
     scroll-padding-top:60px;
+   
+}
+body{
+    font-family: 'Signika', sans-serif;
     font-size:0.85rem;
     @include res(sm){
         font-size:0.95rem;
@@ -43,8 +45,10 @@ html {
     @include res(md){
         font-size:1rem;
     }
+    h1{
+        font-weight: 800;
+    }
 }
-
 .bgd{
     background-color: $tDark;
 }
@@ -465,7 +469,6 @@ header{
         h1{
             font-size: 40px;
             text-transform: capitalize;
-            font-weight: 500;
         }
     }
 }
