@@ -397,32 +397,29 @@ button:focus {
   color: #007bff !important;
 }
 
-#laptop .card .card-body {
-  border: 1px solid transparent !important;
-  border-bottom: 1px solid #353b41 !important;
-  border-right: 1px solid #353b41 !important;
-}
-
 #laptop .card img {
-  border: 1px solid transparent !important;
-  border-top: 1px solid #353b41 !important;
-  border-left: 1px solid #353b41 !important;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 @media (min-width: 576px) {
+  #laptop .card:hover {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
   #laptop .card:hover img {
-    border: 1px solid transparent !important;
-    -webkit-transition: -webkit-transform 1.2s ease;
-    transition: -webkit-transform 1.2s ease;
-    transition: transform 1.2s ease;
-    transition: transform 1.2s ease, -webkit-transform 1.2s ease;
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
     -webkit-transform: scale(1.19);
             transform: scale(1.19);
   }
   #laptop .card:hover .card-body {
-    border: 1px solid transparent !important;
     -webkit-box-shadow: 0px 20px 20px -2px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 20px 20px -2px rgba(0, 0, 0, 0.3);
   }
@@ -431,13 +428,17 @@ button:focus {
 #desktop img {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
 }
 
 #desktop img:hover {
-  -webkit-transition: -webkit-transform 1.2s ease;
-  transition: -webkit-transform 1.2s ease;
-  transition: transform 1.2s ease;
-  transition: transform 1.2s ease, -webkit-transform 1.2s ease;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
   -webkit-transform: scale(1.19);
           transform: scale(1.19);
 }
@@ -1176,6 +1177,10 @@ header #m-logo h1 {
 }
 
 #a-main #portfolio a img {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
   padding: 30px 0px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -1190,10 +1195,10 @@ header #m-logo h1 {
 }
 
 #a-main #portfolio:hover img {
-  -webkit-transition: -webkit-transform 1.2s ease;
-  transition: -webkit-transform 1.2s ease;
-  transition: transform 1.2s ease;
-  transition: transform 1.2s ease, -webkit-transform 1.2s ease;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
   -webkit-transform: scale(1.19);
           transform: scale(1.19);
 }
