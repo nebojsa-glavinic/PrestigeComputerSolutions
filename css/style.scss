@@ -9,10 +9,10 @@ $black:#18181e;
 $tLight: hsla(0, 0%, 100%, 0.5);
 $tDark: rgba(0, 0, 0, 0.3);
 
-/*@font-face{
+@font-face{
     font-family: 'Signika', sans-serif;
     src: url("../fonts/signika/Signika-Regular.ttf") format("truetype");
-}*/   //backup
+}  
 
 *{
     font-family: 'Signika', sans-serif;
@@ -321,7 +321,6 @@ button:focus {
         }
         @include res(sm){
             &:hover {
-                /*box-shadow: 1px 1px 8px 1px $dark;*/
                 img {
                     border:1px solid transparent!important;
                     @include scale;
@@ -688,6 +687,7 @@ header{
         @extend .d-flex;
         flex-direction: column;
         a img{
+            padding:30px 0px;
             backface-visibility: hidden; 
             width:200px;
             vertical-align: middle;

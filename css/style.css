@@ -1,7 +1,8 @@
-/*@font-face{
-    font-family: 'Signika', sans-serif;
-    src: url("../fonts/signika/Signika-Regular.ttf") format("truetype");
-}*/
+@font-face {
+  font-family: 'Signika', sans-serif;
+  src: url("../fonts/signika/Signika-Regular.ttf") format("truetype");
+}
+
 * {
   font-family: 'Signika', sans-serif;
 }
@@ -408,9 +409,6 @@ button:focus {
 }
 
 @media (min-width: 576px) {
-  #laptop .card:hover {
-    /*box-shadow: 1px 1px 8px 1px $dark;*/
-  }
   #laptop .card:hover img {
     border: 1px solid transparent !important;
     -webkit-transition: -webkit-transform 1.2s ease;
@@ -1176,6 +1174,7 @@ header #m-logo h1 {
 }
 
 #a-main #portfolio a img {
+  padding: 30px 0px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   width: 200px;
