@@ -5,27 +5,27 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 60px;
-}
-
-body {
-  font-family: 'Signika', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 @media (min-width: 576px) {
-  body {
+  html {
     font-size: 0.95rem;
   }
 }
 
 @media (min-width: 768px) {
-  body {
+  html {
     font-size: 1rem;
   }
 }
 
-body h1 {
+html h1 {
   font-weight: 800;
+}
+
+body {
+  font-family: 'Signika', sans-serif;
 }
 
 .bgd {
@@ -368,6 +368,10 @@ button:focus {
   font-size: 16px !important;
 }
 
+#footer #info marquee a {
+  color: #007bff;
+}
+
 #footer #footerLogo a img {
   -webkit-clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
           clip-path: polygon(50% 0%, 100% 20%, 100% 100%, 0 100%, 0 20%);
@@ -388,13 +392,23 @@ button:focus {
   transition: 1s ease;
 }
 
-#footer span, #footer h6, #footer a {
+#footer #footerBottom span, #footer a {
+  color: #f8f9fa;
   font-weight: 300 !important;
   border-bottom: none !important;
 }
 
 #footer a:hover {
   color: #007bff !important;
+}
+
+#footer .cheat1:hover, #footer .cheat2:hover {
+  text-decoration: none;
+  color: #f8f9fa !important;
+}
+
+#footer .cheat2 {
+  font-size: 16px;
 }
 
 #laptop .card img {

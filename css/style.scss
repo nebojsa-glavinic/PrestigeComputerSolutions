@@ -34,11 +34,7 @@ $tDark: rgba(0, 0, 0, 0.3);
 html {
     scroll-behavior: smooth;
     scroll-padding-top:60px;
-   
-}
-body{
-    font-family: 'Signika', sans-serif;
-    font-size:0.85rem;
+    font-size:0.9rem;
     @include res(sm){
         font-size:0.95rem;
     }
@@ -48,6 +44,11 @@ body{
     h1{
         font-weight: 800;
     }
+    
+}
+body{
+    font-family: 'Signika', sans-serif;
+    
 }
 .bgd{
     background-color: $tDark;
@@ -92,7 +93,6 @@ button:focus {
 .fa-sitemap, .fa-code, .fa-facebook-square, .fa-instagram, .fa-twitter-square, .fa-sass{
     font-size: 20px;
 }
-
 .dropdown-item:hover{
     background-color: transparent;
     color:$dark;
@@ -281,6 +281,9 @@ button:focus {
     #info{
         marquee{
             font-size: 16px!important;
+            a{
+                color:$primary;
+            }
         }
     }
     #footerLogo{
@@ -298,12 +301,23 @@ button:focus {
             }
         }
     }
-    span, h6, a{
+    #footerBottom span, a{
+        color:$light;
         font-weight: 300!important;
         border-bottom: none!important;
     }
     a:hover{
         color:$primary!important;
+    }
+    .cheat1{
+        &:hover{
+            text-decoration:none;
+            color:$light!important;
+        }
+    }
+    .cheat2{
+        font-size:16px;
+        @extend .cheat1;
     }
 }
 /////////////////////////////// BOOTSTRAP
