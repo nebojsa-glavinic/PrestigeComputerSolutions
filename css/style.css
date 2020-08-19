@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 60px;
   font-size: 0.9rem;
 }
 

@@ -33,7 +33,7 @@ $tDark: rgba(0, 0, 0, 0.3);
 }
 html {
     scroll-behavior: smooth;
-    //scroll-padding-top:60px;
+    scroll-padding-top:60px;
     font-size:0.9rem;
     @include res(sm){
         font-size:0.95rem;
