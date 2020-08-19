@@ -16,11 +16,9 @@
 <body>
   <!--HEADER-->
   <header class="container-fluid bg-dark p-0">
-    <div id="topNav" class="container-fluid container-md px-0">
-      <div class="d-flex justify-content-between py-2">
-        <p class="pl-3 my-auto text-light">Hello, <span id="user" class="text-primary">Guest</span>.</p>
-        <a class="nav-link text-light" href="#" data-toggle="modal" data-target="#account">Account</a>
-      </div>
+    <div id="topNav" class="container-md px-0 d-flex justify-content-between py-2">
+      <p class="pl-3 my-auto text-light">Hello, <span id="user" class="text-primary">Guest</span>.</p>
+      <a class="nav-link text-light" href="#" data-toggle="modal" data-target="#account">Account</a>
     </div>
     <div id="logo" class="text-center py-4 bg-white">
       <a href="index.html"><img class="img-fluid" src="img/logo2_resized.png" alt="white robot logo" data-aos="zoom-in" data-aos-duration="1000"/></a><!--zoomIn-->
@@ -28,13 +26,13 @@
     </div>
   </header>
   <!--NAV-->
-  <div id="mainNav" class="container-fluid p-0 bg-dark sticky-top mx-auto shadow">
-      <nav class="navbar navbar-expand-md navbar-light p-2 container">
-      <button class="navbar-toggler mx-auto rounded-0 border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fas fa-bars text-light m-1"></span>
+  <div id="mainNav" class="p-0 bg-dark sticky-top shadow mx-auto">
+    <nav class="navbar navbar-expand-md p-2 container justify-content-center">
+      <button class="navbar-toggler rounded-0 border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fas fa-bars text-light"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav text-center pr-0 container-fluid">
+        <ul class="navbar-nav text-center container-fluid pr-0">
           <li class="nav-item">
             <a class="nav-link text-light" href="index.html">Home</a>
           </li>

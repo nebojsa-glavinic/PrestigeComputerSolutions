@@ -459,11 +459,15 @@ button:focus {
           transform: scale(1.19);
 }
 
-#desktop .card p {
+#desktop .card .card-body {
+  padding: 20px 10px !important;
+}
+
+#desktop .card .card-body p {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
 }
 
-#desktop .card span {
+#desktop .card .card-body span {
   font-weight: 800;
 }
 

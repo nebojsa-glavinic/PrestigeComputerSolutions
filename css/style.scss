@@ -44,11 +44,10 @@ html {
     h1{
         font-weight: 800;
     }
-    
 }
+
 body{
     font-family: 'Signika', sans-serif;
-    
 }
 .bgd{
     background-color: $tDark;
@@ -353,11 +352,14 @@ button:focus {
         }
     }
     .card{
-        p{
-            border-bottom: 1px solid $tDark !important;
-        }
-        span{
-            font-weight: 800;
+        .card-body{
+            padding:20px 10px!important;
+            p{
+                border-bottom: 1px solid $tDark !important;
+            }
+            span{
+                font-weight: 800;
+            }
         }
     }
 }
@@ -479,10 +481,10 @@ header{
         }
     }
 }
-        #m-mainNav{
-        position:sticky;
-        top:0;
-        li a:hover{
+#m-mainNav{
+    position:sticky;
+    top:0;
+    li a:hover{
         background-color: transparent;
         opacity:0.75;
     }
